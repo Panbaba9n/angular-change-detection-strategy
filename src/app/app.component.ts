@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-change-detection-strategy';
+
+  checkPerformance() {
+    (window as any).ng.profiler.timeChangeDetection();
+  }
+
 }
